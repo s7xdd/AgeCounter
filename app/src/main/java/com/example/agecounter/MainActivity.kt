@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val day = myCalender.get(Calendar.DAY_OF_MONTH)
 
 
-        DatePickerDialog(this, DatePickerDialog.OnDateSetListener {
+        val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener {
                 view, selectedYear, selectedMonth, selectedDayOfMonth ->
                 Toast.makeText(this,
                     "The selected year is $selectedYear, month is $selectedMonth, day is $selectedDayOfMonth"
@@ -41,7 +41,9 @@ class MainActivity : AppCompatActivity() {
 
                 val selectedDate = "$selectedDayOfMonth/${selectedMonth+1}/$selectedYear"
 
-                findViewById<TextView>(R.id.selectdate).setText(selectedDate)
+                val selectDate = findViewById<TextView>(R.id.selectdate)
+                selectDate.setText(selectedDate)
+                selectDate.setTypeface(null, Typeface.BOLD)
 
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
@@ -62,7 +64,11 @@ class MainActivity : AppCompatActivity() {
             }
             ,year
             ,month
-            ,day).show()
+            ,day)
+
+        dpd.datePicker.setMaxDate(Date().time - 86400000)
+        dpd.show()
+
     }
 
 }
