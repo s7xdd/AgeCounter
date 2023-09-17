@@ -6,4 +6,6 @@ This is an android app to count your age in minutes using your Date Of Birth! Th
 
 Here is a picture of how the application looks! 
 
+
+
 ![AgeCounter UI](https://github.com/s7xdd/AgeCounter/assets/90416778/c3d1d65e-cb5d-4108-89be-872103aff62f)
