@@ -8,4 +8,4 @@ Here is a picture of how the application looks!
 
 
 
-![AgeCounter UI](https://github.com/s7xdd/AgeCounter/assets/90416778/c3d1d65e-cb5d-4108-89be-872103aff62f)
+![AgeCounter UI](https://github.com/s7xdd/AgeCounter/assets/90416778/2ce5e28c-8b09-4277-9ff6-4f397826a609)
